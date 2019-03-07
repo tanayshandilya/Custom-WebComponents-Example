@@ -1,0 +1,42 @@
+<html>
+  <head>
+  <script src="app.js" type="text/javascript">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <style>
+    :root{
+      --theme-font: 'Roboto Condensed', sans-serif;
+    }
+  </style>
+  </head>
+  <body>
+    <app>
+      <template>
+        <style>
+          :host{ display: block; }
+          button {
+            display: inline-block;
+            color: #ff4f68;
+            background-color: #ff4f681a;
+            border: 2px solid #ff4f68;
+            padding: 5px 8px;
+            font-family: var(--theme-font);
+            border-radius: 2px;
+            font-size: large;
+            cursor: pointer;
+            box-shadow: none;
+            transition: box-shadow 0.35s ease-in-out;
+          }
+          button:hover{
+            box-shadow:0 5px 10px -1px rgba(0,0,0,0.35);
+            transition: box-shadow 0.35s ease-in-out;
+          }
+          button:active, button:focus {
+            outline: none;
+          }
+        </style>
+        <button></button>
+      </template>
+      <i-button>Iron Button</i-button>
+    </app>
+  </body>
+</html>
